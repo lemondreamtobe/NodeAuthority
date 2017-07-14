@@ -6,5 +6,7 @@ var myfoo = new foo('zhanglinfeng', 17);
 // console.log(myfoo.getName());
 
 
-console.log(test.name);
-console.log(test.sayAge);
+// console.log(test.name);
+// console.log(test.sayAge);
+
+console.log(module.filename); //可以看文件名
