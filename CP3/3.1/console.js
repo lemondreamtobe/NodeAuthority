@@ -46,9 +46,12 @@ var setTime = setTimeout(function (str) {
 }, 5000, 'this is a test string');
 clearTimeout(setTime);//取消
 //setInterval,clearInterval用法一致
-if (5 == true) {
 
-} else {
-
-}
 //setTime.unref()取消延时调用，setTime.ref()继续延时调用
+console.log(require.cache);  //这里看缓存区内容
+// console.log(require('./xxx')); //这里看某个模块的完整路径名；
+
+console.log(__filename); //这里也可以看完整路径
+console.log(__dirname); //这里看当前目录的完整路径，一般用于路由和静态资源分析
+
+
