@@ -37,4 +37,12 @@ console.log(server.listeners('request').length); //server.listeners可以看绑�
 console.log(events.EventEmitter.listenerCount(server, 'request'));
 //这里可以看绑定事件个数,用server.listeners('request').length可代替
 
+//这是EventEmitter类自身拥有的事件，在server没有的，通过原型链访问，绑定事件和取消事件的时候调用
+//相反的方法:removeListener
+server.on('newListener', function (e, f) {
+    console.log('绑定了事件就看这里');
+    console.log(e);
+    console.log(f);
+});
+
 
