@@ -49,4 +49,4 @@ fs.stat('./test.text', function(err, stats) {
 	console.log(stats);
 });
 //free
-
+//free 2
