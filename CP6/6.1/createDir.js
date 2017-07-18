@@ -30,3 +30,4 @@ fs.exists('./test', function (exists) {
         console.log('exists');
     }
 });
+console.log(__dirname);
