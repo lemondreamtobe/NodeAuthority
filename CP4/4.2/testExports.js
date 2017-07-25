@@ -8,9 +8,7 @@ function sayAge() {
     console.log(age);
 };
 //给module.exports赋值会覆盖exorts
-module.exports = function () {
-    this.name= name;
-}
+module.exports.id = '1';
 exports.name    = name;
 exports.age     = age;
 exports.sayAge  = sayAge;

@@ -5,9 +5,10 @@ var StringDecoder = require('string_decoder').StringDecoder;
 var decoder = new StringDecoder();
 //构造方式1
 var buff1 = new Buffer(50);
+buff1.fill(2, 20);
 buff1.fill(1, 10, 11);
 console.log(buff1);
-buff1.fill(2, 20);
+
 
 //构造方式2
 var buff2 = new Buffer([1, 2, 3]);
